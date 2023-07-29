@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.isChecked{
+  position: relative;
+}
+.isChecked::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 1px;
+  background-color: red;
+  top: 60%;
+  left: -5%;
+}
+.list-item {
+  margin: 8px auto;
+  max-width: 500px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
